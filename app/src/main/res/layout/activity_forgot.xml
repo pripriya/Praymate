@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:padding="16.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:textSize="20.0sp"
+        android:id="@+id/token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Token" />
+
+    <EditText android:id="@+id/tokenEditText"
+        android:background="@drawable/textbox"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="10.0dip"
+        android:hint="Enter Token"
+        android:inputType="textEmailAddress">
+        <requestFocus />
+
+    </EditText>
+    <TextView android:textSize="20.0sp"
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip" android:text="Password" />
+
+    <EditText android:id="@+id/passwordEditText"
+        android:background="@drawable/textbox"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="10.0dip"
+        android:hint="Enter Password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView android:textSize="20.0sp"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:text="Confirm Password" />
+
+    <EditText android:id="@+id/confirmpasswordEditText"
+        android:background="@drawable/textbox"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="10.0dip"
+        android:hint="Enter Password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button android:textSize="20.0sp"
+        android:textColor="#ffffffff"
+        android:id="@+id/submitButton"
+        android:background="@drawable/button_pressed"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="20.0dip"
+        android:text="SUBMIT" />
+</LinearLayout>

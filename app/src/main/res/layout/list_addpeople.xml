@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:background="#ff000000"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:id="@+id/nameTextView"
+            android:paddingLeft="2.0dip"
+            android:paddingBottom="10.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_alignParentRight="false" />
+
+        <ImageButton android:textColor="#ffffffff"
+            android:gravity="right"
+            android:id="@+id/closeButton"
+            android:background="@drawable/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/nameEditText" />
+
+        <EditText android:id="@id/nameEditText"
+            android:background="@drawable/textbox"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:layout_below="@+id/nameTextView" />
+
+        <TextView android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:id="@+id/ageTextView"
+            android:paddingLeft="2.0dip"
+            android:paddingTop="10.0dip"
+            android:paddingBottom="10.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:layout_below="@+id/nameEditText"
+            android:layout_alignParentRight="false" />
+
+        <EditText android:id="@+id/ageEditText"
+            android:background="@drawable/textbox"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Age"
+            android:layout_below="@+id/ageTextView" />
+
+        <TextView android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:id="@+id/genderTextView"
+            android:paddingLeft="2.0dip"
+            android:paddingTop="10.0dip"
+            android:paddingBottom="10.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:layout_below="@+id/ageEditText"
+            android:layout_alignParentRight="false" />
+
+        <RadioGroup android:id="@+id/radio"
+            android:background="#ffffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genderTextView">
+
+            <RadioButton android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_below="@+id/genderTextView" />
+
+            <RadioButton android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_below="@+id/genderTextView" />
+
+        </RadioGroup>
+        <Button android:textSize="20.0sp"
+            android:textColor="#ffffffff"
+            android:id="@+id/addPeopleButton"
+            android:background="@drawable/button_pressed"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:text="Add People"
+            android:layout_below="@id/radio" />
+
+    </RelativeLayout>
+</ScrollView>

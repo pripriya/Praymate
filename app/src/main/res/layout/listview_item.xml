@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="left"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView android:id="@+id/flag"
+            android:padding="8.0dip"
+            android:layout_width="140.0dip"
+            android:layout_height="105.0dip"
+            android:layout_margin="2.0dip"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:layout_gravity="bottom|right|center"
+            android:id="@+id/favourites"
+            android:background="@null"
+            android:padding="9.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textSize="25.0px"
+        android:textStyle="bold"
+        android:id="@+id/temple_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="8.0dip"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/frame" />
+
+    <TextView android:textColor="#ff3f3f3f"
+        android:id="@+id/temple_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="8.0dip"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/frame"
+        android:layout_below="@+id/temple_name" />
+
+    <TextView android:textColor="#ff7e7e7e"
+        android:id="@+id/temple_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="8.0dip"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/frame"
+        android:layout_below="@+id/temple_area" />
+</RelativeLayout>

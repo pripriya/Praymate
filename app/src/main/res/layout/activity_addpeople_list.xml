@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5.0dip" app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout android:orientation="horizontal"
+        android:background="?android:selectableItemBackground"
+        android:padding="0.0dip"
+        android:layout_width="105.0dip"
+        android:layout_height="70.0dip">
+
+        <TextView android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/nameList"
+            android:paddingLeft="5.0dip"
+            android:paddingTop="10.0dip"
+            android:paddingRight="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ghhdgsjdgjw"
+            android:singleLine="true" />
+
+        <TextView android:textSize="15.0sp"
+            android:id="@+id/ageList"
+            android:padding="5.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2" android:layout_below="@id/nameList" />
+
+        <TextView android:textSize="15.0sp"
+            android:id="@+id/genderList"
+            android:padding="5.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:layout_below="@id/nameList"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

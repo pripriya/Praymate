@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geval6.praymate">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/geval6"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+
+        <activity android:label="@string/app_name"
+            android:name=".Core.SplashActivity"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity android:excludeFromRecents="true" android:label="Praymate"
+            android:name=".Core.SignInActivity"/>
+
+        <activity android:label="Praymate"
+            android:name=".Core.SignUpActivity"/>
+
+        <activity android:label="Praymate"
+            android:name=".Core.ForgotPasswordActivity"/>
+
+        <activity android:label="Praymate"
+            android:name=".Core.LaunchActivity"/>
+
+        <activity android:label="Praymate"
+            android:name=".Core.TempleListActivity"/>
+
+        <activity android:label="Praymate"
+            android:name=".Core.TempleSearchActivity"/>
+
+        <activity android:label="Praymate"
+            android:name=".Core.TempleDetailActivity"/>
+
+        <activity android:label="Praymate"
+            android:name=".Core.FeatureActivity"/>
+
+        <activity android:excludeFromRecents="true"
+            android:label="Praymate"
+            android:name=".Core.HomeActivity"/>
+
+        <activity android:excludeFromRecents="true"
+            android:label="Praymate"
+            android:name=".Core._TempleActivity"/>
+
+        <activity android:label="Praymate"
+            android:name=".Core.AddPeopleActivity"/>
+
+        <activity android:label="Praymate"
+            android:name=".Core.TempleFavouriteActivity"/>
+
+        <activity android:name=".Core.PaymentActivity"/>
+
+    </application>
+
+</manifest>

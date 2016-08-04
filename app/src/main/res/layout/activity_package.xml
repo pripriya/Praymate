@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:textSize="20.0sp"
+        android:textStyle="bold"
+        android:id="@+id/packageName"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="10.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton android:gravity="right"
+        android:id="@+id/image"
+        android:background="@null"
+        android:paddingTop="10.0dip"
+        android:paddingRight="10.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+
+    <TextView android:id="@+id/packageDesc"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="2.0dip"
+        android:paddingRight="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/packageName" />
+
+    <TextView android:textColor="#ffffa500"
+        android:id="@+id/packageCost"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="2.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingBottom="10.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/packageDesc" />
+
+    <TextView android:textColor="#ffffa500"
+        android:id="@+id/packageCostDesc"
+        android:paddingTop="2.0dip"
+        android:paddingBottom="10.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/packageDesc"
+        android:layout_toEndOf="@id/packageCost" />
+
+</RelativeLayout>

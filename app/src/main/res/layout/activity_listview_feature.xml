@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fffff6e5"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListView android:id="@id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45.0dip" />
+
+    <Button android:textSize="15.0sp"
+        android:textColor="#ffffffff"
+        android:id="@+id/bookTrip"
+        android:background="@drawable/button_pressed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+
+        android:text="Book Trip" android:layout_alignParentBottom="true" />
+</RelativeLayout>
